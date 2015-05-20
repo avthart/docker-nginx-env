@@ -6,4 +6,4 @@ RUN chmod +x /bin/ep
 
 EXPOSE 80 443
 
-CMD [ "/bin/ep", "-v", "/etc/nginx/*.conf", "--", "nginx", "-g", "daemon off;" ]
+CMD [ "/bin/ep", "-v", "/etc/nginx/*.conf", "--", "/usr/sbin/nginx", "-g", "daemon off;" ]
